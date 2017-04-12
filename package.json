@@ -1,6 +1,6 @@
 {
-  "name": "ng2-datepicker",
-  "version": "1.8.3",
+  "name": "ng2-date-picker",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jkuri/ng2-datepicker.git"
+    "url": "https://github.com/em-gei/ng2-datepicker.git"
   },
   "keywords": [
     "angular",
@@ -30,11 +30,7 @@
     "date",
     "component"
   ],
-  "author": "Jan Kuri <jkuri88@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/jkuri/ng2-datepicker/issues"
-  },
-  "homepage": "https://github.com/jkuri/ng2-datepicker#readme",
+  "author": "Emgei",
   "main": "./lib-dist/ng2-datepicker.module.js",
   "module": "./lib-dist/ng2-datepicker.module.js",
   "types": "./lib-dist/ng2-datepicker.module.d.ts",
