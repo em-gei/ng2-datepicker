@@ -11,6 +11,7 @@ import {
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 import { SlimScrollOptions } from 'ng2-slimscroll';
 import * as moment from 'moment';
+import 'moment/locale/it';
 
 const Moment: any = (<any>moment).default || moment;
 
@@ -68,15 +69,15 @@ export class DatePickerOptions {
   constructor(obj?: IDatePickerOptions) {
     this.autoApply = (obj && obj.autoApply === true) ? true : false;
     this.style = obj && obj.style ? obj.style : 'normal';
-    this.locale = obj && obj.locale ? obj.locale : 'en';
+    this.locale = obj && obj.locale ? obj.locale : 'it';
     this.minDate = obj && obj.minDate ? obj.minDate : null;
     this.maxDate = obj && obj.maxDate ? obj.maxDate : null;
     this.initialDate = obj && obj.initialDate ? obj.initialDate : null;
     this.firstWeekdaySunday = obj && obj.firstWeekdaySunday ? obj.firstWeekdaySunday : false;
-    this.format = obj && obj.format ? obj.format : 'YYYY-MM-DD';
-    this.selectYearText = obj && obj.selectYearText ? obj.selectYearText : 'Select Year';
-    this.todayText = obj && obj.todayText ? obj.todayText : 'Today';
-    this.clearText = obj && obj.clearText ? obj.clearText : 'Clear';
+    this.format = obj && obj.format ? obj.format : 'DD-MM-YYYY';
+    this.selectYearText = obj && obj.selectYearText ? obj.selectYearText : 'Seleziona anno';
+    this.todayText = obj && obj.todayText ? obj.todayText : 'Oggi';
+    this.clearText = obj && obj.clearText ? obj.clearText : 'Cancella';
   }
 }
 
