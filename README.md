@@ -14,7 +14,7 @@ Looking for a date range picker? Check this one: [http://ng-daterangepicker.jank
 Install ng2-datepicker via `npm`
 
 ````shell
-npm install ng2-datepicker --save
+npm install ng2-dpicker --save
 ````
 
 ## Integration
@@ -48,16 +48,16 @@ export class AppComponent {
 }
 
 // app.component.html
-<ng2-datepicker [options]="options" [(ngModel)]="date"></ng2-datepicker>
+<ng2-dpicker [options]="options" [(ngModel)]="date"></ng2-dpicker>
 ```
 
-For more info about options please see [this](https://github.com/jkuri/ng2-datepicker/blob/master/src/ng2-datepicker/ng2-datepicker.component.ts#L41-L53).
+For more info about options please see [this]( https://github.com/em-gei/ng2-datepicker/blob/master/src/ng2-datepicker/ng2-datepicker.component.ts#L41-L53).
 
 ## Run Included Demo
 
 ```shell
-git clone https://github.com/jkuri/ng2-datepicker.git --depth 1
-cd ng2-datepicker
+git clone https://github.com/em-gei/ng2-datepicker.git --depth 1
+cd ng2-dpicker
 npm install
 npm start
 ```
