@@ -49,8 +49,6 @@ export interface IDatePickerOptions {
   firstWeekdaySunday?: boolean;
   format?: string;
   selectYearText?: string;
-  todayText?: string;
-  clearText?: string;
 }
 
 export class DatePickerOptions {
@@ -63,8 +61,6 @@ export class DatePickerOptions {
   firstWeekdaySunday?: boolean;
   format?: string;
   selectYearText?: string;
-  todayText?: string;
-  clearText?: string;
 
   constructor(obj?: IDatePickerOptions) {
     this.autoApply = (obj && obj.autoApply === true) ? true : false;
@@ -76,8 +72,6 @@ export class DatePickerOptions {
     this.firstWeekdaySunday = obj && obj.firstWeekdaySunday ? obj.firstWeekdaySunday : false;
     this.format = obj && obj.format ? obj.format : 'DD-MM-YYYY';
     this.selectYearText = obj && obj.selectYearText ? obj.selectYearText : 'Seleziona anno';
-    this.todayText = obj && obj.todayText ? obj.todayText : 'Oggi';
-    this.clearText = obj && obj.clearText ? obj.clearText : 'Cancella';
   }
 }
 
@@ -356,11 +350,6 @@ export class DatePickerComponent implements ControlValueAccessor, OnInit {
     this.generateCalendar();
   }
 
-  today() {
-    this.currentDate = Moment();
-    this.selectDate(null, this.currentDate);
-  }
-
   toggle() {
     this.opened = !this.opened;
     if (this.opened) {
@@ -386,11 +375,6 @@ export class DatePickerComponent implements ControlValueAccessor, OnInit {
 
   openYearPicker() {
     setTimeout(() => this.yearPicker = true);
-  }
-
-  clear() {
-    this.value = { day: null, month: null, year: null, momentObj: null, formatted: null };
-    this.close();
   }
 
 }

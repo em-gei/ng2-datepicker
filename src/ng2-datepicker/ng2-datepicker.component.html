@@ -92,10 +92,6 @@
             {{ d.day }}
           </span>
         </div>
-        <div class="datepicker-buttons" *ngIf="!options.autoApply">
-          <button type="button" class="a-button u-is-secondary u-is-small" (click)="clear()">{{options.clearText}}</button>
-          <button type="button" class="a-button u-is-primary u-is-small" (click)="today()">{{options.todayText}}</button>
-        </div>
       </div>
       <div *ngIf="yearPicker">
         <div class="datepicker-calendar-years-container" slimScroll [options]="scrollOptions">
